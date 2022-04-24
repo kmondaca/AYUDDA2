@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron">
+
+
+<h1> ¡Por favor envíe cualquier pregunta!!</h1>
+<form method="POST">
+    {{form.hidden_tag()}}
+    {{form.sfirst.label}}{{form.sfirst}}
+    <br>
+    {{form.slast.label}}{{form.slast}}
+    <br>
+    {{form.slang.label}}{{form.slang}}
+      <br>
+    {{form.sphone.label}}{{form.sphone}}
+      <br>
+    {{form.sconpref.label}}{{form.sconpref}}
+      <br>
+     ¿Cuál es tu correo electrónico?
+    <br>
+    {{form.semail.label}}{{form.semail}}
+      <br>
+    ¿Cuáles preguntas tienes?
+    <br>
+    {{form.sconchoice.label}}{{form.sconchoice}}
+    <br>
+    {{form.submit()}}
+</form>
+
+</div>
+
+
+ {% endblock content %}
